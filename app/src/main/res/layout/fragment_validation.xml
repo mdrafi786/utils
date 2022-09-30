@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.sample.utils.fragments.ValidationFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/sf_pro_display_heavy"
+            android:text="@string/signup"
+            android:textColor="@color/dark_blue"
+            android:textSize="24sp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/firstNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edit_text_background"
+            android:focusedByDefault="false"
+            android:hint="@string/enter_first_name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="14sp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/errorFirstNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="42dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/first_name_should_be_at_least_2_character"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/lastNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edit_text_background"
+            android:focusedByDefault="false"
+            android:hint="@string/enter_last_name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="14sp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/errorLastNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="42dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/last_name_should_be_at_least_2_character"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edit_text_background"
+            android:focusedByDefault="false"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="14sp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/errorInvalidEmailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="42dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/invalid_email"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edit_text_background"
+            android:focusedByDefault="false"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="14sp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/errorInvalidPasswordTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="42dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/password_should_contains_capital_letter_small_letter_number_and_special_character"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="0.5"
+            android:backgroundTint="@color/yellow"
+            android:enabled="false"
+            android:text="@string/signup"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue" />
+
+    </LinearLayout>
+
+</layout>

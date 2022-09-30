@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.sample.utils.fragments.DateTimeFragment">
+
+        <TextView
+            android:id="@+id/dateFromUtcTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/signup"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timeFromUtcTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/signup"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date2FromUtcTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/signup"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/getDataFromTimestampTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/signup"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/getTimeStampFromDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/signup"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/getTimeFromTimestampTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="@string/signup"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</layout>

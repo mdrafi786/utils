@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Utils</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="i_am_groot">I am Groot!!</string>
+    <string name="i_am">I am </string>
+    <string name="groot"> Groot!!</string>
+    <string name="i_agree_to_terms_and_conditions_and_privacy_notice"><![CDATA[I agree to Terms & Conditions and Privacy Policy]]></string>
+
+    <string name="privacy_notice_underline"><u>Privacy Policy</u></string>
+    <string name="terms_conditions_underline"><u>Terms &amp; Conditions</u></string>
+    <string name="enter_email">Enter email…</string>
+    <string name="enter_password">Enter password…</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="enter_first_name">Enter first name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="first_name_should_be_at_least_2_character">First name should be at least 2 character</string>
+    <string name="last_name_should_be_at_least_2_character">Last name should be at least 2 character</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="password_should_contains_capital_letter_small_letter_number_and_special_character">Password Should contains capital letter,small letter,number and special character</string>
+
+    <string name="date_time_format">%1$s -> %2$s</string>
+
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/cryptoFragment">
+
+    <fragment
+        android:id="@+id/cryptoFragment"
+        android:name="com.sample.utils.fragments.CryptographyFragment"
+        android:label="Crypto"
+        tools:layout="@layout/fragment_cryptography" />
+
+    <fragment
+        android:id="@+id/glideFragment"
+        android:name="com.sample.utils.fragments.GlideFragment"
+        android:label="Glide"
+        tools:layout="@layout/fragment_glide" />
+    <fragment
+        android:id="@+id/dateTimeFragment"
+        android:name="com.sample.utils.fragments.DateTimeFragment"
+        android:label="DateTime"
+        tools:layout="@layout/fragment_date_time" />
+
+    <fragment
+        android:id="@+id/spannableFragment"
+        android:name="com.sample.utils.fragments.SpannableFragment"
+        android:label="Spannable"
+        tools:layout="@layout/fragment_spannable" />
+
+    <fragment
+        android:id="@+id/validationFragment"
+        android:name="com.sample.utils.fragments.ValidationFragment"
+        android:label="Validation"
+        tools:layout="@layout/fragment_validation" />
+</navigation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.sample.utils.fragments.CryptographyFragment">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter text here..."
+            android:inputType="text"
+            android:padding="12dp"
+            android:focusedByDefault="false"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/encryptBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Encrypt"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/decryptBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Decrypt"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cryptoFragment"
+        android:icon="@drawable/ic_baseline_enhanced_encryption_24"
+        android:title="Encryption"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/glideFragment"
+        android:icon="@drawable/ic_baseline_image_search_24"
+        android:title="Glide"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/dateTimeFragment"
+        android:icon="@drawable/ic_baseline_timer_24"
+        android:title="Formatter"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/spannableFragment"
+        android:icon="@drawable/ic_baseline_text_fields_24"
+        android:title="Spannable"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/validationFragment"
+        android:icon="@drawable/ic_baseline_approval_24"
+        android:title="Validation"
+        app:showAsAction="ifRoom" />
+
+</menu>
