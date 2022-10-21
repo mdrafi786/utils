@@ -2,6 +2,7 @@ package com.sample.utils.fragments
 
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -34,6 +35,7 @@ class ValidationFragment : Fragment() {
 
     private fun setClickListener() {
         binding.signupBt.setOnClickListener {
+            binding.signUpTv.text = getString(R.string.signup)
             activity?.let {
                 Toast.makeText(it, "Signup Successfully", Toast.LENGTH_SHORT).show()
             }
@@ -149,5 +151,26 @@ class ValidationFragment : Fragment() {
                 )
             )
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("CustomTag", "onResume() of ValidationFragment")
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.d("CustomTag", "OnCreate() of ValidationFragment")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("CustomTag", "onDestroy() of ValidationFragment")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d("CustomTag", "onDestroyView() of ValidationFragment")
+
     }
 }

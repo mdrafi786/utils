@@ -16,10 +16,6 @@ class GlideFragment : Fragment() {
 
     private lateinit var bindingGlideBinding: FragmentGlideBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d("GlideFragment", "OnCreate()  Glide Fragment")
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,5 +56,26 @@ class GlideFragment : Fragment() {
                 }
             }
         }.load()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("CustomTag","onResume() of GlideFragment")
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.d("CustomTag","OnCreate() of GlideFragment")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("CustomTag","onDestroy() of GlideFragment")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d("CustomTag", "onDestroyView() of GlideFragment")
+
     }
 }

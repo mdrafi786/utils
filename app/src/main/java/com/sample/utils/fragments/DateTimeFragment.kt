@@ -1,6 +1,7 @@
 package com.sample.utils.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -58,7 +59,7 @@ class DateTimeFragment : Fragment() {
                 getDateFromTimestamp(currentTimeStamp)
             )
 
-        //get full date from time stamp
+        //get time stamp from utc
         binding.getTimeStampFromDateTV.text =
             String.format(
                 getString(R.string.date_time_format),
@@ -74,6 +75,27 @@ class DateTimeFragment : Fragment() {
                 currentTimeStamp,
                 getTimeFromTimestamp(currentTimeStamp)
             )
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("CustomTag", "onResume() of DateTimeFragment")
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.d("CustomTag", "OnCreate() of DateTimeFragment")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("CustomTag", "onDestroy() of DateTimeFragment")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d("CustomTag", "onDestroyView() of DateTimeFragment")
+
     }
 
 }
