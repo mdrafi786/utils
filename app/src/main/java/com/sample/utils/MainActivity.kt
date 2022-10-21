@@ -21,9 +21,4 @@ class MainActivity : AppCompatActivity() {
         setupWithNavController(bottomNavigationView, navController)
     }
 
-    override fun onResume() {
-        super.onResume()
-        Log.d("CustomTag", "onResume() of MainActivity")
-    }
-
 }

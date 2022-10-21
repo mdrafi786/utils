@@ -77,25 +77,4 @@ class DateTimeFragment : Fragment() {
             )
     }
 
-    override fun onResume() {
-        super.onResume()
-        Log.d("CustomTag", "onResume() of DateTimeFragment")
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d("CustomTag", "OnCreate() of DateTimeFragment")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("CustomTag", "onDestroy() of DateTimeFragment")
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        Log.d("CustomTag", "onDestroyView() of DateTimeFragment")
-
-    }
-
 }

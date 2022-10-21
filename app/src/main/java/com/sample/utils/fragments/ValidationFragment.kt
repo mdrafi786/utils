@@ -152,25 +152,4 @@ class ValidationFragment : Fragment() {
             )
         }
     }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("CustomTag", "onResume() of ValidationFragment")
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d("CustomTag", "OnCreate() of ValidationFragment")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("CustomTag", "onDestroy() of ValidationFragment")
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        Log.d("CustomTag", "onDestroyView() of ValidationFragment")
-
-    }
 }

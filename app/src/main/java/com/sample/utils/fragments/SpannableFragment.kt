@@ -86,25 +86,4 @@ class SpannableFragment : Fragment() {
             }),
         )
     }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("CustomTag","onResume() of SpannableFragment")
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d("CustomTag","OnCreate() of SpannableFragment")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("CustomTag","onDestroy() of SpannableFragment")
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        Log.d("CustomTag", "onDestroyView() of SpannableFragment")
-
-    }
 }

@@ -50,25 +50,4 @@ class CryptographyFragment : Fragment() {
             }
         }
     }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("CustomTag", "onResume() of CryptoFragment")
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d("CustomTag", "OnCreate() of CryptoFragment")
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        Log.d("CustomTag", "onDestroyView() of CryptoFragment")
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("CustomTag", "onDestroy() of CryptoFragment")
-    }
 }
